@@ -4,3 +4,11 @@
 SELECT pc.model, pc.speed, pc.hd
 FROM pc
 WHERE pc.price<500
+
+
+--Задание: 3 
+--Найдите номер модели, объем памяти и размеры экранов ПК-блокнотов, цена которых превышает 1000 дол.
+
+SELECT la.model, la.ram, la.screen
+FROM laptop la 
+WHERE la.price>1000
