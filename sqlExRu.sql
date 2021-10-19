@@ -6,9 +6,3 @@ FROM pc
 WHERE pc.price<500
 
 
---Задание: 2
---Найдите производителей принтеров. Вывести: maker
-
-SELECT DISTINCT p.maker
-FROM product p
-WHERE p.type='printer'
