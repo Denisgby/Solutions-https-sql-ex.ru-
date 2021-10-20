@@ -34,3 +34,13 @@ GO
 SELECT *
 FROM printer pr
 WHERE pr.color='y'
+GO
+-------------------
+
+
+--Задание: 5
+--Найдите номер модели, скорость и размер жесткого диска ПК, имеющих 12x или 24x CD и цену менее 600 дол.
+
+SELECT pc.model, pc.speed, pc.hd
+FROM pc
+WHERE (cd='12x' OR cd='24x') AND pc.price<600
