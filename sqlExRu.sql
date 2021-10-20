@@ -26,3 +26,11 @@ FROM laptop la
 WHERE la.price>1000
 GO
 ---------------------
+
+
+--Задание: 4
+--Найдите все записи таблицы Printer для цветных принтеров.
+
+SELECT *
+FROM printer pr
+WHERE pr.color='y'
