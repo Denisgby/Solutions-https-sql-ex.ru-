@@ -77,6 +77,18 @@ GO
 
 
 --Задание: 8
+--Найдите производителя, выпускающего ПК, но не ПК-блокноты.
+
+SELECT maker
+FROM product
+WHERE type='pc' 
+EXCEPT
+SELECT maker
+FROM product
+WHERE type='laptop' 
+GO
+--------------------------
+
 
 --Задание: 9
 --Задание: 10
