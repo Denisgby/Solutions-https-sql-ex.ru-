@@ -72,9 +72,11 @@ UNION
 SELECT  pri.model, pri.price
 FROM product pr JOIN printer pri ON pr.model=pri.model
 WHERE pr.maker='B'
+GO
+-------------------
 
 
+--Задание: 8
 
---Задание: 7
---Задание: 7
---Задание: 7
+--Задание: 9
+--Задание: 10
