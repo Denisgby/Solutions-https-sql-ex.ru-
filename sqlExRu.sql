@@ -59,6 +59,22 @@ GO
 
 
 --Задание: 7
+--Найдите номера моделей и цены всех имеющихся в продаже продуктов (любого типа) производителя B (латинская буква).
+
+SELECT DISTINCT  p.model, p.price
+FROM product pr JOIN pc p ON pr.model=p.model
+WHERE pr.maker='B'
+UNION 
+SELECT  la.model, la.price
+FROM product pr JOIN laptop la ON pr.model=la.model
+WHERE pr.maker='B'
+UNION 
+SELECT  pri.model, pri.price
+FROM product pr JOIN printer pri ON pr.model=pri.model
+WHERE pr.maker='B'
+
+
+
 --Задание: 7
 --Задание: 7
 --Задание: 7
