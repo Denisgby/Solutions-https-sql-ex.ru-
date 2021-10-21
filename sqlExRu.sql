@@ -56,3 +56,9 @@ FROM Product JOIN Laptop ON product.model=laptop.model
 WHERE Laptop.hd >= 10
 GO
 ----------------------
+
+
+--Задание: 7
+--Задание: 7
+--Задание: 7
+--Задание: 7
