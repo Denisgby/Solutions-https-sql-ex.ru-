@@ -101,3 +101,19 @@ GO
 
 
 --Задание: 10
+--Найдите модели принтеров, имеющих самую высокую цену. Вывести: model, price
+
+SELECT model, price
+FROM printer
+WHERE price IN  ( SELECT MAX(price) AS p1
+                  FROM printer) 
+GO
+----------------------------
+
+
+--Задание: 12
+--
+--Задание: 13
+--
+--Задание: 14
+--
