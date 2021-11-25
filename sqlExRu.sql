@@ -139,3 +139,11 @@ WHERE maker='A'
 GROUP BY maker
 GO
 -----------------------
+
+
+--Задание: 14
+--Найдите класс, имя и страну для кораблей из таблицы Ships, имеющих не менее 10 орудий.
+
+SELECT s.class, s.name, c.country
+FROM ships s JOIN classes c ON s.class=c.class
+WHERE numGuns>=10
