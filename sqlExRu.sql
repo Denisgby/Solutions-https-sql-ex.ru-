@@ -206,3 +206,15 @@ SELECT  pr.maker, la.screen
 FROM product pr JOIN laptop la ON pr.model=la.model
 )t1
 GROUP BY maker
+------------------------------
+
+
+--Задание: 20
+--Найдите производителей, выпускающих по меньшей мере три различных модели ПК. Вывести: Maker, число моделей ПК.
+
+SELECT p.maker, COUNT(p.model) AS Ql_type
+FROM product p
+WHERE type='pc' 
+GROUP BY maker
+HAVING COUNT(p.model)>2;
+--------------------------
